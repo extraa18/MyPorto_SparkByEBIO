@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio pribadi – developer & kreator digital yang passionate dalam membangun pengalaman web yang indah." />
+  <title>SparkByE – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-spark">Spark</span><span class="brand-by">ByE</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"    class="nav-link active">Home</a></li>
+      <li><a href="#about"   class="nav-link">About</a></li>
+      <li><a href="#skills"  class="nav-link">Skills</a></li>
+      <li><a href="#projects"class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">👋 Available for work</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text" id="typedName">SparkByE</span>
+      </h1>
+      <p class="hero-role">
+        <span class="typed-wrapper">
+          <span id="typedRole"></span><span class="cursor">|</span>
+        </span>
+      </p>
+      <p class="hero-desc">
+        Passionate developer & digital creator — building beautiful, 
+        performant experiences that leave a lasting impression.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="heroProjectsBtn">View Projects</a>
+        <a href="#contact"  class="btn btn-ghost"   id="heroContactBtn">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Years Exp</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-label">Clients</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <div class="avatar-emoji">🚀</div>
+        </div>
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="about-icon">🎓</div>
+          <h3>Education</h3>
+          <p>Studying Computer Science with a focus on web technologies and software engineering.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon">💡</div>
+          <h3>Passion</h3>
+          <p>I love turning ideas into reality through clean code, great UX, and creative design solutions.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon">🌐</div>
+          <h3>Goal</h3>
+          <p>Building digital products that make people's lives easier — one line of code at a time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ────────────────────────────── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item reveal" id="skill-html">
+          <div class="skill-header">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-name">HTML & CSS</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item reveal" id="skill-js">
+          <div class="skill-header">
+            <span class="skill-icon">⚡</span>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-item reveal" id="skill-react">
+          <div class="skill-header">
+            <span class="skill-icon">⚛️</span>
+            <span class="skill-name">React</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item reveal" id="skill-node">
+          <div class="skill-header">
+            <span class="skill-icon">🟢</span>
+            <span class="skill-name">Node.js</span>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-item reveal" id="skill-python">
+          <div class="skill-header">
+            <span class="skill-icon">🐍</span>
+            <span class="skill-name">Python</span>
+            <span class="skill-pct">68%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+        </div>
+        <div class="skill-item reveal" id="skill-design">
+          <div class="skill-header">
+            <span class="skill-icon">🎨</span>
+            <span class="skill-name">UI/UX Design</span>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card glass-card reveal" id="proj-1">
+          <div class="project-img" style="--c1:#a855f7;--c2:#6366f1">🛒</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+            </div>
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">Full-stack shopping app dengan fitur cart, auth, dan payment gateway terintegrasi.</p>
+            <div class="project-links">
+              <a href="#" class="project-link" id="proj1-demo">Live Demo ↗</a>
+              <a href="#" class="project-link project-link-ghost" id="proj1-code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal" id="proj-2">
+          <div class="project-img" style="--c1:#06b6d4;--c2:#3b82f6">📊</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Vue.js</span><span class="tag">Chart.js</span><span class="tag">REST API</span>
+            </div>
+            <h3 class="project-title">Analytics Dashboard</h3>
+            <p class="project-desc">Dashboard interaktif untuk visualisasi data real-time dengan chart dinamis.</p>
+            <div class="project-links">
+              <a href="#" class="project-link" id="proj2-demo">Live Demo ↗</a>
+              <a href="#" class="project-link project-link-ghost" id="proj2-code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal" id="proj-3">
+          <div class="project-img" style="--c1:#f59e0b;--c2:#ef4444">🤖</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">AI</span>
+            </div>
+            <h3 class="project-title">AI Chat Bot</h3>
+            <p class="project-desc">Chatbot cerdas berbasis NLP untuk customer service otomatis 24/7.</p>
+            <div class="project-links">
+              <a href="#" class="project-link" id="proj3-demo">Live Demo ↗</a>
+              <a href="#" class="project-link project-link-ghost" id="proj3-code">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────── -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <p class="contact-tagline">Ada project keren? Let's collaborate! 🔥</p>
+          <div class="contact-links">
+            <a href="mailto:hello@sparkbye.dev" class="contact-item" id="contact-email">
+              <span class="contact-icon">📧</span>
+              <span>hello@sparkbye.dev</span>
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-item" id="contact-github">
+              <span class="contact-icon">🐱</span>
+              <span>github.com/sparkbye</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-item" id="contact-linkedin">
+              <span class="contact-icon">💼</span>
+              <span>linkedin.com/in/sparkbye</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal" id="contactForm">
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message 🚀</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p>Crafted with <span class="heart">❤️</span> by <strong>SparkByE</strong> · <span id="footerYear"></span></p>
+    </div>
+  </footer>
+
+  <!-- ── SCROLL TO TOP ──────────────────────── -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
